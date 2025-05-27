@@ -6,12 +6,24 @@
     },
     "routes": [
         {
-            "src": "/build/(.*)",
-            "dest": "/public/assets/$1"
+            "src": "/build/assets/(.*)",
+            "dest": "/public/build/assets/$1"
         },
         {
-            "src": "/images/(.*)",
+            "src": "/build/js/(.*)",
+            "dest": "/public/assets/js/$1"
+        },
+        {
+            "src": "/build/image/(.*)",
             "dest": "/public/assets/image/$1"
+        },
+        {
+            "src": "/build/css/(.*)",
+            "dest": "/public/assets/css/$1"
+        },
+        {
+            "src": "/build/(.*)",
+            "dest": "/public/build/$1"
         },
         {
             "src": "/(.*\\.php)",
