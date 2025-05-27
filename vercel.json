@@ -6,12 +6,12 @@
     },
     "routes": [
         {
-            "src": "/build/assets(.*)",
+            "src": "/build/(.*)",
             "dest": "/public/assets/$1"
         },
         {
             "src": "/images/(.*)",
-            "dest": "/public/assets/images/$1"
+            "dest": "/public/assets/image/$1"
         },
         {
             "src": "/(.*\\.php)",
